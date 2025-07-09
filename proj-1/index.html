@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="SurveyForm.css">
+  </head>
+  <body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description">Please fill out this form honestly</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name:
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+
+        <label id="email-label" for="email">Email:
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </label>
+
+        <label id="number-label" for="number">Age:
+          <input id="number" type="number" min="13" max="120" placeholder="Age" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Which best describes you?
+          <select id="dropdown">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="hobbyist">Hobbyist</option>
+          </select>
+        </label>
+
+        <p>Would you recommend this form?</p>
+        <label><input name="recommend" type="radio" value="yes" /> Yes</label>
+        <label><input name="recommend" type="radio" value="no" /> No</label>
+      </fieldset>
+
+      <fieldset>
+        <p>What are your interests?</p>
+        <label><input type="checkbox" value="gaming" /> Gaming</label>
+        <label><input type="checkbox" value="music" /> Music</label>
+        <label><input type="checkbox" value="video" /> Video</label>
+        <label><input type="checkbox" value="art" /> Art</label>
+        <label><input type="checkbox" value="photography" /> Photography</label>
+        <label><input type="checkbox" value="literature" /> Literature</label>
+      </fieldset>
+
+      <label for="ta">Additional Comments:</label>
+      <textarea name="comments" id="ta" placeholder="Write your thoughts here..."></textarea>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
